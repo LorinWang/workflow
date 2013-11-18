@@ -1,1 +1,10 @@
+<<<<<<< HEAD
 /build
+=======
+*.class
+
+# Package Files #
+*.jar
+*.war
+*.ear
+>>>>>>> refs/remotes/choose_remote_name/master
