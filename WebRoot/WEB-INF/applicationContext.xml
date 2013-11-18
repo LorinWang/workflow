@@ -104,7 +104,7 @@
 			<!-- 使用嵌套Bean的方式来定义任务Bean -->
 			<bean class="org.springframework.scheduling.quartz.JobDetailBean">
 				<!-- 指定任务Bean的实现类 -->
-				<property name="jobClass" value="org.crazyit.hrsystem.schedule.PayJob" />
+				<property name="jobClass" value="schedule.PayJob" />
 				<!-- 为任务Bean注入属性 -->
 				<property name="jobDataAsMap">
 					<map>
@@ -123,7 +123,7 @@
 			<!-- 使用嵌套Bean的方式来定义任务Bean -->
 			<bean class="org.springframework.scheduling.quartz.JobDetailBean">
 				<!-- 指定任务Bean的实现类 -->
-				<property name="jobClass" value="org.crazyit.hrsystem.schedule.PunchJob" />
+				<property name="jobClass" value="schedule.PunchJob" />
 				<!-- 为任务Bean注入属性 -->
 				<property name="jobDataAsMap">
 					<map>
