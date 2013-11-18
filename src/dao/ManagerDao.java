@@ -4,7 +4,8 @@ import java.util.List;
 
 import domain.Manager;
 
-public interface ManagerDao {
+public interface ManagerDao
+{
 	/**
 	 * 根据标识属性来加载Manager实例
 	 * 

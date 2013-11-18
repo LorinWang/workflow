@@ -5,7 +5,8 @@ import java.util.List;
 import domain.Employee;
 import domain.Manager;
 
-public interface EmployeeDao {
+public interface EmployeeDao
+{
 	/**
 	 * 根据标识属性来加载Employee实例
 	 * 

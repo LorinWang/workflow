@@ -2,7 +2,8 @@ package domain;
 
 import java.io.Serializable;
 
-public class Payment implements Serializable {
+public class Payment implements Serializable
+{
 	private static final long serialVersionUID = 48L;
 	// 标识属性
 	private Integer id;
@@ -13,11 +14,13 @@ public class Payment implements Serializable {
 	private Employee employee;
 
 	// 无参数的构造器
-	public Payment() {
+	public Payment()
+	{
 	}
 
 	// 初始化全部属性的构造器
-	public Payment(Integer id, String payMonth, double amount, Employee employee) {
+	public Payment(Integer id, String payMonth, double amount, Employee employee)
+	{
 		this.id = id;
 		this.payMonth = payMonth;
 		this.amount = amount;
@@ -25,38 +28,46 @@ public class Payment implements Serializable {
 	}
 
 	// id属性的setter和getter方法
-	public void setId(Integer id) {
+	public void setId(Integer id)
+	{
 		this.id = id;
 	}
 
-	public Integer getId() {
+	public Integer getId()
+	{
 		return this.id;
 	}
 
 	// payMonth属性的setter和getter方法
-	public void setPayMonth(String payMonth) {
+	public void setPayMonth(String payMonth)
+	{
 		this.payMonth = payMonth;
 	}
 
-	public String getPayMonth() {
+	public String getPayMonth()
+	{
 		return this.payMonth;
 	}
 
 	// amount属性的setter和getter方法
-	public void setAmount(double amount) {
+	public void setAmount(double amount)
+	{
 		this.amount = amount;
 	}
 
-	public double getAmount() {
+	public double getAmount()
+	{
 		return this.amount;
 	}
 
 	// employee属性的setter和getter方法
-	public void setEmployee(Employee employee) {
+	public void setEmployee(Employee employee)
+	{
 		this.employee = employee;
 	}
 
-	public Employee getEmployee() {
+	public Employee getEmployee()
+	{
 		return this.employee;
 	}
 

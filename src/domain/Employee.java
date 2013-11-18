@@ -4,7 +4,8 @@ import java.io.Serializable;
 import java.util.HashSet;
 import java.util.Set;
 
-public class Employee implements Serializable {
+public class Employee implements Serializable
+{
 
 	private static final long serialVersionUID = 48L;
 	// 标识属性
@@ -23,11 +24,12 @@ public class Employee implements Serializable {
 	private Set<Payment> payments = new HashSet<Payment>();
 
 	// 无参数的构造器
-	public Employee() {
+	public Employee()
+	{
 	}
 
-	public Employee(Integer id, String name, String pass, double salary,
-			Manager manager, Set<Attend> attends, Set<Payment> payments) {
+	public Employee(Integer id, String name, String pass, double salary, Manager manager, Set<Attend> attends, Set<Payment> payments)
+	{
 		super();
 		this.id = id;
 		this.name = name;
@@ -39,83 +41,100 @@ public class Employee implements Serializable {
 	}
 
 	// id属性的setter和getter方法
-	public void setId(Integer id) {
+	public void setId(Integer id)
+	{
 		this.id = id;
 	}
 
-	public Integer getId() {
+	public Integer getId()
+	{
 		return this.id;
 	}
 
 	// name属性的setter和getter方法
-	public void setName(String name) {
+	public void setName(String name)
+	{
 		this.name = name;
 	}
 
-	public String getName() {
+	public String getName()
+	{
 		return this.name;
 	}
 
 	// pass属性的setter和getter方法
-	public void setPass(String pass) {
+	public void setPass(String pass)
+	{
 		this.pass = pass;
 	}
 
-	public String getPass() {
+	public String getPass()
+	{
 		return this.pass;
 	}
 
 	// salary属性的setter和getter方法
-	public void setSalary(double salary) {
+	public void setSalary(double salary)
+	{
 		this.salary = salary;
 	}
 
-	public double getSalary() {
+	public double getSalary()
+	{
 		return this.salary;
 	}
 
 	// manager属性的setter和getter方法
-	public void setManager(Manager manager) {
+	public void setManager(Manager manager)
+	{
 		this.manager = manager;
 	}
 
-	public Manager getManager() {
+	public Manager getManager()
+	{
 		return this.manager;
 	}
 
 	// attends属性的setter和getter方法
-	public void setAttends(Set<Attend> attends) {
+	public void setAttends(Set<Attend> attends)
+	{
 		this.attends = attends;
 	}
 
-	public Set<Attend> getAttends() {
+	public Set<Attend> getAttends()
+	{
 		return this.attends;
 	}
 
 	// payments属性的setter和getter方法
-	public void setPayments(Set<Payment> payments) {
+	public void setPayments(Set<Payment> payments)
+	{
 		this.payments = payments;
 	}
 
-	public Set<Payment> getPayments() {
+	public Set<Payment> getPayments()
+	{
 		return this.payments;
 	}
 
 	// 重写equals()方法，只要name、pass相同的员工即认为相等。
-	public boolean equals(Object obj) {
-		if (this == obj) {
+	public boolean equals(Object obj)
+	{
+		if (this == obj)
+		{
 			return true;
 		}
-		if (obj != null && obj.getClass() == Employee.class) {
+		if (obj != null && obj.getClass() == Employee.class)
+		{
 			Employee employee = (Employee) obj;
-			return this.getName().equals(employee.getName())
-					&& this.getPass().equals(employee.getPass());
+			return this.getName().equals(employee.getName()) && this.getPass().equals(employee.getPass());
 		}
 		return false;
 	}
 
 	// 根据员工的name、pass来计算hashCode值
-	public int hashCode() {
+	public int hashCode()
+	{
 		return name.hashCode() + pass.hashCode() * 17;
 	}
 

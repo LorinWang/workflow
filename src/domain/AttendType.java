@@ -2,7 +2,8 @@ package domain;
 
 import java.io.Serializable;
 
-public class AttendType implements Serializable {
+public class AttendType implements Serializable
+{
 	private static final long serialVersionUID = 48L;
 
 	// 标识属性
@@ -13,40 +14,48 @@ public class AttendType implements Serializable {
 	private double amerce;
 
 	// 无参数的构造器
-	public AttendType() {
+	public AttendType()
+	{
 	}
 
 	// 初始化全部属性的构造器
-	public AttendType(Integer id, String name, double amerce) {
+	public AttendType(Integer id, String name, double amerce)
+	{
 		this.id = id;
 		this.name = name;
 		this.amerce = amerce;
 	}
 
 	// id属性的setter和getter方法
-	public void setId(Integer id) {
+	public void setId(Integer id)
+	{
 		this.id = id;
 	}
 
-	public Integer getId() {
+	public Integer getId()
+	{
 		return this.id;
 	}
 
 	// name属性的setter和getter方法
-	public void setName(String name) {
+	public void setName(String name)
+	{
 		this.name = name;
 	}
 
-	public String getName() {
+	public String getName()
+	{
 		return this.name;
 	}
 
 	// amerce属性的setter和getter方法
-	public void setAmerce(double amerce) {
+	public void setAmerce(double amerce)
+	{
 		this.amerce = amerce;
 	}
 
-	public double getAmerce() {
+	public double getAmerce()
+	{
 		return this.amerce;
 	}
 }

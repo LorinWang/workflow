@@ -2,7 +2,8 @@ package domain;
 
 import java.io.Serializable;
 
-public class Application implements Serializable {
+public class Application implements Serializable
+{
 	private static final long serialVersionUID = 48L;
 	// 代表标识属性
 	private Integer id;
@@ -18,12 +19,13 @@ public class Application implements Serializable {
 	private CheckBack check;
 
 	// 无参数的构造器
-	public Application() {
+	public Application()
+	{
 	}
 
 	// 初始化全部属性的构造器
-	public Application(Integer id, String reason, boolean result,
-			Attend attend, AttendType type, CheckBack check) {
+	public Application(Integer id, String reason, boolean result, Attend attend, AttendType type, CheckBack check)
+	{
 		this.id = id;
 		this.reason = reason;
 		this.result = result;
@@ -33,56 +35,68 @@ public class Application implements Serializable {
 	}
 
 	// id属性的setter和getter方法
-	public void setId(Integer id) {
+	public void setId(Integer id)
+	{
 		this.id = id;
 	}
 
-	public Integer getId() {
+	public Integer getId()
+	{
 		return this.id;
 	}
 
 	// reason属性的setter和getter方法
-	public void setReason(String reason) {
+	public void setReason(String reason)
+	{
 		this.reason = reason;
 	}
 
-	public String getReason() {
+	public String getReason()
+	{
 		return this.reason;
 	}
 
 	// result属性的setter和getter方法
-	public void setResult(boolean result) {
+	public void setResult(boolean result)
+	{
 		this.result = result;
 	}
 
-	public boolean getResult() {
+	public boolean getResult()
+	{
 		return this.result;
 	}
 
 	// attend属性的setter和getter方法
-	public void setAttend(Attend attend) {
+	public void setAttend(Attend attend)
+	{
 		this.attend = attend;
 	}
 
-	public Attend getAttend() {
+	public Attend getAttend()
+	{
 		return this.attend;
 	}
 
 	// type属性的setter和getter方法
-	public void setType(AttendType type) {
+	public void setType(AttendType type)
+	{
 		this.type = type;
 	}
 
-	public AttendType getType() {
+	public AttendType getType()
+	{
 		return this.type;
 	}
 
 	// check属性的setter和getter方法
-	public void setCheck(CheckBack check) {
+	public void setCheck(CheckBack check)
+	{
 		this.check = check;
 	}
 
-	public CheckBack getCheck() {
+	public CheckBack getCheck()
+	{
 		return this.check;
 	}
 

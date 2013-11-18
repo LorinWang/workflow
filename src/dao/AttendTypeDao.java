@@ -4,7 +4,8 @@ import java.util.List;
 
 import domain.AttendType;
 
-public interface AttendTypeDao {
+public interface AttendTypeDao
+{
 	/**
 	 * 根据标识属性来加载AttendType实例
 	 * 

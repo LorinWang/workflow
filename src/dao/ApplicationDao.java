@@ -5,18 +5,20 @@ import java.util.List;
 import domain.Application;
 import domain.Employee;
 
-public interface ApplicationDao {
+public interface ApplicationDao
+{
 	Application get(Integer id);
-	
+
 	Integer save(Application applicaton);
-	
+
 	void update(Application application);
-	
+
 	void delete(Application application);
-	
+
 	void delete(Integer id);
-	
+
 	List<Application> findAll();
+
 	List<Application> findByEmp(Employee emp);
 
 }

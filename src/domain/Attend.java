@@ -3,7 +3,8 @@ package domain;
 import java.io.Serializable;
 import java.util.Date;
 
-public class Attend implements Serializable {
+public class Attend implements Serializable
+{
 
 	private static final long serialVersionUID = 48L;
 
@@ -21,12 +22,13 @@ public class Attend implements Serializable {
 	private Employee employee;
 
 	// 无参数的构造器
-	public Attend() {
+	public Attend()
+	{
 	}
 
 	// 初始化全部属性的构造器
-	public Attend(Integer id, String dutyDay, Date punchTime, boolean isCome,
-			AttendType type, Employee employee) {
+	public Attend(Integer id, String dutyDay, Date punchTime, boolean isCome, AttendType type, Employee employee)
+	{
 		this.id = id;
 		this.dutyDay = dutyDay;
 		this.punchTime = punchTime;
@@ -36,76 +38,91 @@ public class Attend implements Serializable {
 	}
 
 	// id属性的setter和getter方法
-	public void setId(Integer id) {
+	public void setId(Integer id)
+	{
 		this.id = id;
 	}
 
-	public Integer getId() {
+	public Integer getId()
+	{
 		return this.id;
 	}
 
 	// dutyDay属性的setter和getter方法
-	public void setDutyDay(String dutyDay) {
+	public void setDutyDay(String dutyDay)
+	{
 		this.dutyDay = dutyDay;
 	}
 
-	public String getDutyDay() {
+	public String getDutyDay()
+	{
 		return this.dutyDay;
 	}
 
 	// punchTime属性的setter和getter方法
-	public void setPunchTime(Date punchTime) {
+	public void setPunchTime(Date punchTime)
+	{
 		this.punchTime = punchTime;
 	}
 
-	public Date getPunchTime() {
+	public Date getPunchTime()
+	{
 		return this.punchTime;
 	}
 
 	// isCome属性的setter和getter方法
-	public void setIsCome(boolean isCome) {
+	public void setIsCome(boolean isCome)
+	{
 		this.isCome = isCome;
 	}
 
-	public boolean getIsCome() {
+	public boolean getIsCome()
+	{
 		return this.isCome;
 	}
 
 	// type属性的setter和getter方法
-	public void setType(AttendType type) {
+	public void setType(AttendType type)
+	{
 		this.type = type;
 	}
 
-	public AttendType getType() {
+	public AttendType getType()
+	{
 		return this.type;
 	}
 
 	// employee属性的setter和getter方法
-	public void setEmployee(Employee employee) {
+	public void setEmployee(Employee employee)
+	{
 		this.employee = employee;
 	}
 
-	public Employee getEmployee() {
+	public Employee getEmployee()
+	{
 		return this.employee;
 	}
 
 	// 根据employee、isCome、dutyDay来重写equals方法
-	public boolean equals(Object obj) {
-		if (this == obj) {
+	public boolean equals(Object obj)
+	{
+		if (this == obj)
+		{
 			return true;
 		}
-		if (obj != null && obj.getClass() == Attend.class) {
+		if (obj != null && obj.getClass() == Attend.class)
+		{
 			Attend attend = (Attend) obj;
-			return getEmployee().equals(attend.getEmployee())
-					&& getDutyDay().equals(attend.getDutyDay())
-					&& getIsCome() == attend.getIsCome();
+			return getEmployee().equals(attend.getEmployee()) && getDutyDay().equals(attend.getDutyDay()) && getIsCome() == attend.getIsCome();
 		}
 		return false;
 	}
 
 	// 根据employee、isCome、dutyDay来重写hashCode()方法
-	public int hashCode() {
-		if (getIsCome()) {
+	public int hashCode()
+	{
+		if (getIsCome())
+		{
 			return dutyDay.hashCode() + 29 * employee.hashCode() + 1;
 		}
 		return dutyDay.hashCode() + 29 * employee.hashCode();

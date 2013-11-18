@@ -5,7 +5,8 @@ import java.util.List;
 import domain.Employee;
 import domain.Payment;
 
-public interface PaymentDao {
+public interface PaymentDao
+{
 	/**
 	 * 根据标识属性来加载Payment实例
 	 * 
