@@ -8,7 +8,7 @@ import org.hibernate.Query;
 import org.hibernate.Session;
 import org.springframework.orm.hibernate3.HibernateCallback;
 import org.springframework.orm.hibernate3.support.HibernateDaoSupport;
-
+@SuppressWarnings("rawtypes")
 public class YeekuHibernateDaoSupport extends HibernateDaoSupport
 {
 
@@ -23,6 +23,7 @@ public class YeekuHibernateDaoSupport extends HibernateDaoSupport
 	 *            每页需要显示的记录数
 	 * @return 当前页的所有记录
 	 */
+
 	public List findByPage(final String hql, final int offset, final int pageSize)
 	{
 		// 通过一个HibernateCallback对象来执行查询
