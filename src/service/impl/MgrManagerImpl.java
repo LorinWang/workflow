@@ -6,6 +6,9 @@ import java.util.Calendar;
 import java.util.List;
 
 import service.MgrManager;
+import vo.AppBean;
+import vo.EmpBean;
+import vo.SalaryBean;
 import dao.ApplicationDao;
 import dao.AttendDao;
 import dao.AttendTypeDao;

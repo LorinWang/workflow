@@ -2,6 +2,8 @@ package service;
 
 import java.util.List;
 
+import vo.AttendBean;
+import vo.PaymentBean;
 import domain.AttendType;
 import domain.Manager;
 

@@ -1,10 +1,14 @@
 package service.impl;
 
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 
+import service.EmpManager;
+import vo.AttendBean;
+import vo.PaymentBean;
 import dao.ApplicationDao;
 import dao.AttendDao;
 import dao.AttendTypeDao;
@@ -18,7 +22,6 @@ import domain.AttendType;
 import domain.Employee;
 import domain.Manager;
 import domain.Payment;
-import service.EmpManager;
 
 
 public class EmpManagerImpl	implements EmpManager
